@@ -25,6 +25,12 @@ Additional guidance:
   2. why it matters
   3. what it may imply
 - For implied ideas, prioritize rigor, but you may include a small number of clearly labeled speculative ideas worth tracking if they are anchored in the day’s developments.
+- For startup and product ideas:
+-- do a brief two-step process:
+  1. consider direct, second-order, and contrarian ideas
+  2. keep only the strongest few
+-- prefer ideas that are non-obvious but still tightly linked to the observed developments
+-- avoid generic wrappers and obvious copilot concepts unless they are unusually well-supported
 
 At the end, provide a short changelog:
 - what was added
