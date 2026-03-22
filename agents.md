@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository tracks business-,  capability-focused, and technical intelligence from Techmeme.
+This repository tracks business- and capability-focused intelligence from Techmeme.
 
 The goal is not to summarize news for its own sake. The goal is to identify implications that matter for:
 - markets and macro-sensitive sectors
@@ -23,7 +23,7 @@ This repository has two layers:
 1. **Daily notes**
    - additive
    - closer to the news flow
-   - capture what changed, why it matters, and what it may imply
+   - capture changes that matter for capability / technology, strategy / markets, or downstream ideas
 
 2. **Synthesized implications**
    - slower-moving
@@ -47,6 +47,7 @@ If `notes/synthesized_implications.md` does not yet exist or is materially thin:
 - Mixed evidence should remain mixed.
 - Do not force a coherent narrative when the evidence is contradictory.
 - Do not force a startup, product, or market implication unless it is reasonably supported.
+- Important but not yet interpretable developments are allowed. Capture them as `Watch` bullets instead of forcing a stronger read than the evidence supports.
 
 ## Style
 
@@ -63,8 +64,11 @@ Requirements:
 - If a sentence sounds impressive but not natural, rewrite it more simply.
 
 Avoid phrases like:
+- "value accrues"
 - "workflow-native"
+- "control point"
 - "moat formation"
+- "compression risk"
 - "narrative support"
 - "machine-readable execution"
 - "relationship-bearing judgment"
@@ -88,9 +92,7 @@ Before writing each section, ask:
 For each meaningful bullet, use one short inline signal label at the end:
 - `[New]`
 - `[Reinforcing]`
-- `[Material]`
-- `[Weakening]`
-- `[Contradicting]`
+- `[Challenging]`
 - `[Watch]`
 
 Determine labels by comparing today’s developments against:
@@ -99,21 +101,32 @@ Determine labels by comparing today’s developments against:
 - watchlist implications
 - recorded disconfirming evidence in the synthesis
 
+### Label guidance
+
+- Use `[New]` when a development introduces a genuinely new implication and is strong enough that the synthesis should likely be updated now.
+- Use `[Reinforcing]` when a development supports an existing implication without changing the basic shape of the view.
+- Use `[Challenging]` when a development pushes against an existing implication or prior read, whether mildly or directly.
+- Use `[Watch]` when a development looks important but is still too early, ambiguous, or underdetermined to interpret confidently.
+
+`[Watch]` is the default home for:
+- emerging themes
+- one-off but notable signals
+- developments that may matter if they repeat
+- important facts whose readthrough is not yet clear
+
+`[New]` should be used sparingly.
+It does not mean merely novel.
+It means new and important enough to justify a synthesis-level update.
+
 ### Daily note structure
 
 ~~~md
 ## YYYY-MM-DD
 
-### Major developments
+### Capability / technology shifts
 - ...
 
-### Capability shifts
-- ...
-
-### Business / strategic implications
-- ...
-
-### Market / industry implications
+### Strategic / market implications
 - ...
 
 ### Implied ideas
@@ -143,6 +156,16 @@ Determine labels by comparing today’s developments against:
 
 ### Daily note guidance
 
+Do not include a separate "Major developments" section.
+
+Only include items that lead to at least one of:
+- a capability / technology shift
+- a strategic / market implication
+- a meaningful implied idea
+- a `Watch` item that looks important but is not yet interpretable
+
+If a news item does not change the picture in one of those ways, omit it.
+
 Each bullet should usually answer:
 - what happened
 - why it matters
@@ -153,19 +176,46 @@ But do not present these as explicit labeled sections or as a rigid three-part f
 Write each bullet as a natural observation in plain English.
 
 In most cases:
-- sentence 1 = what happened
+- sentence 1 = the concrete development or observed fact
 - sentence 2 = the so-what
 
 Include the implication only when it adds something non-obvious and reasonably supported.
 
 Do not force all three elements into every bullet.
 
-Section guidance:
-- **Major developments:** what happened
-- **Capability shifts:** what appears to be changing in product, technology, model, platform, infrastructure, or workflow capability
-- **Business / strategic implications:** company strategy, competition, pricing, monetization, positioning
-- **Market / industry implications:** broader sector or industry readthroughs
-- **Implied ideas:** downstream interpretations, not restatements of the news
+Every bullet should still begin with the concrete development or observed fact, even if it is filed under capability / technology shifts or strategic / market implications.
+
+Do not lead with an abstract conclusion if you can anchor it in a specific observed development.
+
+Prefer:
+- "AWS plans to offer Cerebras inference alongside Trainium. This suggests inference is becoming more workload-specific."
+over:
+- "Inference is becoming more workload-specific."
+
+Capability / technology shifts:
+- changes in what systems can do
+- changes in models, products, infrastructure, tooling, interfaces, deployment, or technical economics
+- keep these grounded in concrete developments, not abstract trend language
+
+Strategic / market implications:
+- company strategy
+- monetization
+- competition
+- pricing
+- workflow ownership
+- distribution
+- cost structure
+- industry structure
+- cross-company or sector-level readthroughs
+
+Do not split company-level and industry-level implications into separate sections.
+Use one section and write the clearest level of analysis for the point.
+
+When a development seems important but the readthrough is still unclear:
+- include it as a `Watch` bullet
+- state the concrete development
+- briefly note why it may matter
+- avoid forcing a stronger interpretation than the evidence supports
 
 ## Better idea generation
 
@@ -251,20 +301,20 @@ Use different evidence windows for different synthesis tasks.
 
 ### Default windows
 
-- **New implication promotion:** prioritize the last **3–6 weeks** of daily notes
+- **New implication promotion:** prioritize the last **2–4 weeks** of daily notes
 - **Updating existing implications:** prioritize the last **6–12 weeks** of daily notes
 - **Long-term memory:** use the full `notes/synthesized_implications.md` document as the durable record of prior views
 
 ### How to apply these windows
 
-- When deciding whether to create or promote a **new implication**, focus mainly on whether a theme appears repeatedly and meaningfully within the last **3–6 weeks**
+- When deciding whether to create or promote a **new implication**, focus mainly on whether a theme appears repeatedly and meaningfully within the last **2–4 weeks**
 - When deciding whether to **strengthen, weaken, or materially challenge** an existing implication, consider the last **6–12 weeks** of daily notes, along with the current synthesis entry
 - When adding **contradictory / disconfirming evidence**, recent evidence may be enough if it is a real observed fact that clearly cuts against an existing implication
 
 ### Promotion rule
 
 A new theme should usually be promoted into an active implication only when:
-- it appears meaningfully on at least **3 separate days within roughly 3–6 weeks**, or
+- it appears meaningfully on at least **3 separate days within roughly 2–4 weeks**, or
 - a single development is clearly a **step-change event** with durable strategic significance
 
 ### Search discipline
@@ -299,10 +349,8 @@ Rules:
 These are ceilings, not targets. Empty sections are allowed.
 
 Per daily entry:
-- Major developments: max 3
-- Capability shifts: max 3
-- Business / strategic implications: max 3
-- Market / industry implications: max 3
+- Capability / technology shifts: max 4
+- Strategic / market implications: max 5
 
 Ideas:
 - Higher-conviction investment ideas: max 2
@@ -343,7 +391,7 @@ Better:
 At the end of each run, provide a short changelog stating:
 - what was added
 - whether the synthesis changed
-- what was strengthened, weakened, challenged, or left unchanged
+- what was strengthened, challenged, promoted, or left unchanged
 - any notable uncertainty
 
 ## Monthly file rollover for daily notes
