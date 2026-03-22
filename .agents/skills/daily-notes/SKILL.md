@@ -18,20 +18,24 @@ Task:
 
 Follow AGENTS.md for:
 - structure
-- hard caps
-- style
 - labels
+- style
 - judgment rules
+- hard caps
 - idea quality bar
+- monthly rollover behavior
 
 Run-specific reminders:
 - Be selective.
 - Prefer fewer, sharper bullets over broad coverage.
-- Write each bullet as a natural observation, not a filled-in template.
+- Only include items that produce a real capability / technology shift, strategic / market implication, meaningful implied idea, or a `Watch` item that looks important but is not yet interpretable.
+- Every bullet should begin with a concrete development or observed fact, even when the point is interpretive.
+- Do not create a separate "Major developments" section.
 - Put the signal label at the end of the bullet.
+- Empty sections are allowed.
 - If the synthesis file is thin, rely more on recent daily notes and use `[Watch]` more often.
 
 At the end, provide a short changelog:
 - what was added
-- which points looked new, reinforcing, material, weakening, contradicting, or watchlist-level
+- which points looked `[New]`, `[Reinforcing]`, `[Challenging]`, or `[Watch]`
 - whether anything looks important enough to consider for synthesis
