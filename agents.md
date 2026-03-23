@@ -303,8 +303,6 @@ The synthesis should maintain a small number of sharp, testable house views.
 Each active hypothesis should include:
 - hypothesis
 - status
-- confidence
-- time horizon
 - why we believe this
 - current evidence
 - evidence against
@@ -345,13 +343,13 @@ Use different evidence windows for different synthesis tasks.
 
 ### Default windows
 
-- **New hypothesis promotion:** prioritize the last **3–6 weeks** of daily notes
+- **New hypothesis promotion:** prioritize the last **6–12 weeks** of daily notes
 - **Updating existing hypotheses:** prioritize the last **6–12 weeks** of daily notes
 - **Long-term memory:** use the full `notes/synthesized_implications.md` document as the durable record of prior views
 
 ### How to apply these windows
 
-- When deciding whether to create or promote a **new hypothesis**, focus mainly on whether a theme appears repeatedly and meaningfully within the last **3–6 weeks**
+- When deciding whether to create or promote a **new hypothesis**, focus mainly on whether a theme appears repeatedly and meaningfully within the last **6–12 weeks**
 - When deciding whether to **strengthen or challenge** an existing hypothesis, consider the last **6–12 weeks** of daily notes, along with the current synthesis entry
 - A single development may justify immediate promotion if it is clearly a step-change event with durable strategic significance
 
