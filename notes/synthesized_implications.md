@@ -1,5 +1,5 @@
 # Synthesized Implications
-_Last updated: 2026-03-20_
+_Last updated: 2026-03-29_
 
 ## How to read this document
 
@@ -217,3 +217,26 @@ The SEC/CFTC guidance appears important because it reduces classification uncert
 
 **Why it is not promoted yet**
 - The rule change looks important, but the next step is adoption. The market-structure implications are still too early to call.
+
+---
+
+### B. Enterprise AI buying may split on trust boundaries before it splits on raw model quality
+
+**Why it might matter**
+
+As assistants move from chat into coding, desktop control, internal communications, and regulated data, buyers may care more about hard boundaries than about small model-quality differences.
+
+That would shift advantage toward products that can prove where data goes, what gets retained, what can train the model, what the agent can access, and how actions are reviewed afterward.
+
+**Current evidence**
+- Microsoft launched Copilot Health, which points to AI products forming around trust-heavy and regulated data rather than around generic assistant behavior alone.
+- The Wall Street Journal reported Meta employees are using internal agents with access to chat logs and work files, and some can contact colleagues on the user’s behalf. That makes permissions and replayability more central.
+- Anthropic shipped computer use in paid desktop products. That reinforces that agent value is increasingly tied to permission scope, review loops, and what happens on the actual work surface.
+- GitHub said it will start using Copilot interaction data for training unless users opt out. That is a concrete reminder that data-boundary terms may become a buying and deployment issue, not just a policy detail.
+
+**What is still missing**
+- More proof that buyers will switch vendors, pay more, or standardize on products mainly because of stronger training boundaries, audit trails, or permission controls.
+- Clearer evidence on who captures the value if this becomes a real purchasing wedge: incumbent security vendors, workflow owners, or new governance layers.
+
+**Why it is not promoted yet**
+- The pattern is real across several March entries, but the notes still show design pressure more than proven market structure. It looks early to call this a durable winner-selection mechanism rather than an emerging requirement.
