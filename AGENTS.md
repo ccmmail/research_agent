@@ -69,13 +69,18 @@ Requirements:
 - If a sentence sounds impressive but not natural, rewrite it more simply.
 - Prefer sharp claims over mushy summaries, but do not overstate the evidence.
 
+Before writing each section, ask:
+- What is the simplest way to say this?
+- Would a smart reader say this out loud in conversation?
+- Can I replace an abstract noun with a concrete verb?
+- Can I cut this sentence by 30% without losing meaning?
+- Is this observation sharp enough to matter for capital allocation, company-building, or product design?
+
 Avoid phrases like:
-- "workflow-native"
 - "moat formation"
 - "narrative support"
 - "machine-readable execution"
 - "relationship-bearing judgment"
-- "surface area"
 - "opening salvo"
 
 Prefer:
@@ -83,13 +88,6 @@ Prefer:
 - "can actually do the work" over "permission to act"
 - "investors seem to want" over "public markets are demanding proof"
 - "this suggests" over "what it may imply is"
-
-Before writing each section, ask:
-- What is the simplest way to say this?
-- Would a smart reader say this out loud in conversation?
-- Can I replace an abstract noun with a concrete verb?
-- Can I cut this sentence by 30% without losing meaning?
-- Is this observation sharp enough to matter for capital allocation, company-building, or product design?
 
 ## Daily notes
 
@@ -136,27 +134,16 @@ It means new and important enough to justify a synthesis-level update.
 
 ### Implied ideas
 
-#### Higher-conviction ideas
-
-##### Investment watchlist ideas
+#### Investment watchlist ideas
 - ...
 
-##### Startup ideas
+#### Startup ideas
 - ...
 
-##### Product ideas
+#### Product ideas
 - ...
 
-#### Speculative ideas worth tracking
 
-##### Investment watchlist ideas
-- ...
-
-##### Startup ideas
-- ...
-
-##### Product ideas
-- ...
 ~~~
 
 ### Daily note guidance
@@ -244,7 +231,7 @@ Evaluate candidate ideas on:
 - specificity
 - distinctness
 
-Only include ideas that are strong on at least 3 of those dimensions.
+Only include ideas that are strong on at least 2 of those dimensions.
 
 For each idea, briefly state:
 - the problem
@@ -373,18 +360,6 @@ Unless there is a reason to go further back, a synthesis run should usually revi
 - the prior monthly daily file if needed
 - the full `notes/synthesized_implications.md` document
 
-## Ideas
-
-Separate ideas into:
-- **Higher-conviction ideas**
-- **Speculative ideas worth tracking**
-
-Rules:
-- Higher-conviction ideas should be closely tied to observed developments.
-- Speculative ideas are optional.
-- Speculative ideas must be explicitly labeled and tied to an observed development.
-- A speculative idea should usually be only one or two inferential steps beyond the evidence.
-- If a speculative idea is weak or generic, omit it.
 
 ## Hard caps
 
@@ -395,12 +370,9 @@ Per daily entry:
 - Strategic / market implications: max 5
 
 Ideas:
-- Higher-conviction investment ideas: max 2
-- Higher-conviction startup ideas: max 2
-- Higher-conviction product ideas: max 2
-- Speculative investment ideas: max 1
-- Speculative startup ideas: max 1
-- Speculative product ideas: max 1
+- Investment ideas: max 3
+- Startup ideas: max 3
+- Product ideas: max 3
 
 ## Writing examples
 

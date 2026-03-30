@@ -1,6 +1,6 @@
 ---
 name: synthesis-review
-description: Review and conservatively update notes/synthesized_implications.md after the daily notes have been updated. Use this when the task is to maintain sharp house views, test them against recent evidence, and surface missing hypotheses. Do not use this skill for writing the daily Techmeme entry itself.
+description: Review and update notes/synthesized_implications.md after the daily notes have been updated. Use this when the task is to maintain sharp house views, test them against recent evidence, and surface missing hypotheses. Do not use this skill for writing the daily Techmeme entry itself.
 ---
 
 Read:
