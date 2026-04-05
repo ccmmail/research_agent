@@ -136,6 +136,7 @@ In fragmented categories like tax prep, bookkeeping, compliance support, paraleg
 **Current evidence**
 - PwC said partners who resist AI have no place at the firm and that it plans to turn services into AI-powered tools while moving away from pure hourly billing.
 - Fal’s reported growth suggests customers are paying for the operating stack around model deployment, not just for models.
+- TrueUp data cited by Business Insider showed more than 67,000 software engineering openings at tech companies, up 30% so far in 2026 and roughly double the mid-2023 low. That suggests firms still need more people to deploy and supervise AI systems even as coding tools improve.
 - The daily notes repeatedly point to implementation and delivered work as one of the clearest monetization layers right now.
 - Multiple March entries reinforce that the bottleneck is making AI work inside real workflows, not just accessing a powerful model.
 
@@ -312,3 +313,30 @@ That would shift advantage toward products that can prove where data goes, what 
 
 **Why it is not promoted yet**
 - The pattern is real across several March entries, but the notes still show design pressure more than proven market structure. It looks early to call this a durable winner-selection mechanism rather than an emerging requirement.
+
+---
+
+### C. The first big AI revenue pools may be heavy-use enterprise workflows, not broad assistant seats
+
+**Why it might matter**
+
+AI demand may show up first where users run expensive workflows again and again, can tie spend to delivered work, and already sit inside real budgets.
+
+That would favor coding, enterprise execution, and outcome-tied products over broad assistant seats sold mostly on general usefulness.
+
+It would also push vendors toward metered, workflow-tied, or outcome-tied pricing faster than many software buyers expect.
+
+**Current evidence**
+- Bloomberg reported Microsoft hit internal Copilot sales goals after shifting its sales strategy, but only 3% of customers were paying for Copilot as of January. That suggests broad assistant distribution does not automatically create paid pull.
+- Anthropic said Claude subscriptions will stop covering third-party harnesses like OpenClaw because those usage patterns were not what the plans were built for. That suggests flat-rate AI pricing gets unstable once agents loop heavily.
+- OpenAI shut down Sora and its API after usage fell and the product kept burning expensive compute. That suggests high-compute AI products can still lose resources if they do not attach to a strong workflow or revenue line.
+- PwC said it plans to turn services into AI-powered tools while moving away from pure hourly billing. That points toward AI monetization being tied more tightly to delivered work than to legacy pricing models.
+- Curated-source datapoint: In a 2026-03-27 All-In transcript, panelists claimed Anthropic added about $6 billion of annual run-rate revenue in February alone and framed coding as the gateway into enterprise IT budgets. If directionally right, that suggests enterprise coding may be one of the first AI categories with truly large revenue pull.
+
+**What is still missing**
+- Independent confirmation on Anthropic's reported revenue burst and clearer proof it reflects durable usage rather than one-off contracting or recognition differences.
+- More examples across categories showing the same pattern outside coding and a handful of frontier vendors.
+- Proof that metered or outcome-tied pricing can hold margins once competition and model costs normalize.
+
+**Why it is not promoted yet**
+- The pattern is visible, but it is still concentrated in a few products and business models. It looks more like an emerging monetization split than a settled market structure.
