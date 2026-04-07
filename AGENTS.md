@@ -49,6 +49,8 @@ If `notes/synthesized_implications.md` does not yet exist or is materially thin:
 - use `Watch` more often
 - avoid pretending a durable synthesis already exists
 
+A synthesis is materially thin if it has fewer than two active hypotheses, each with at least one item of concrete current evidence.
+
 ## Source registry and default flow
 
 See `SOURCES.md` for the canonical list of named sources, source types, quality levels, and how each source should be used.
@@ -57,36 +59,7 @@ Default workflow:
 - Daily notes use the default daily-news source(s) listed in `SOURCES.md`
 - Synthesis uses recent daily notes, `notes/synthesized_implications.md`, and additional synthesis inputs listed in `SOURCES.md`
 
-### How to use source types
-
-- **Reported news** and **primary sources** should do most of the work in daily notes and in 'current evidence' / 'evidence against'.
-- **Curated interpretive sources** should mostly help with:
-  - 'why we believe this'
-  - surfacing missing hypotheses
-  - refining implications
-    - investment ideas
-    - business / product strategy
-    - startup ideas
-  - adding concrete datapoints not already captured elsewhere
-- **Speculative sources** should not drive active hypotheses by themselves.
-
-A curated transcript can introduce a hypothesis faster than it can confirm one.
-
-## Source quality
-
-Assume curated transcripts are manually selected for quality, but still distinguish:
-- **high-confidence datapoints**
-- **first-hand operator observations**
-- **interpretations**
-- **speculation**
-
-Do not collapse those into one blob.
-
-### Source weighting
-
-Use source type and source quality to determine how much weight to place on a source.
-
-#### By source type
+### By source type
 
 - **Reported news**
   - Best for: observed developments, external reactions, launches, partnerships, funding, regulation, market signals
@@ -99,7 +72,7 @@ Use source type and source quality to determine how much weight to place on a so
   - Treat company claims as strong on facts about what the company says or launched, but not automatically as proof of market impact
 
 - **Curated interpretive sources**
-  - Best for: `why we believe this`, sharpening implications, surfacing missing hypotheses, and extracting occasional concrete datapoints
+  - Best for: `why we believe this`, refining implications, surfacing missing hypotheses, and extracting occasional concrete datapoints
   - Usually should not be the main basis for `current evidence` or `evidence against` unless the source provides unusually strong first-hand operator evidence or a highly material datapoint
   - A curated interpretive source can justify a candidate hypothesis faster than an active hypothesis
 
@@ -107,7 +80,15 @@ Use source type and source quality to determine how much weight to place on a so
   - Best for: watchlist only
   - Should not drive active hypotheses by themselves
 
-#### By quality level
+Within any curated transcript, distinguish between:
+- **high-confidence datapoints**
+- **first-hand operator observations**
+- **interpretations**
+- **speculation**
+
+Do not collapse those into one blob. Use source type and quality to determine how much weight to place on a source 
+
+### By quality level
 
 - **High**
   - Can materially shape synthesis if the source role fits
@@ -122,7 +103,7 @@ Use source type and source quality to determine how much weight to place on a so
   - Do not let these sources drive active hypotheses by themselves
 
 
-#### Tie-break rules
+### Tie-break rules
 
 - If reported news / primary sources and curated interpretation disagree, prefer the reported or primary evidence unless the curated source has unusually strong first-hand information.
 - If a source is strong on interpretation but weak on facts, use it to sharpen `why we believe this`, not to populate `current evidence`.
@@ -178,6 +159,21 @@ Prefer:
 - "can actually do the work" over "permission to act"
 - "investors seem to want" over "public markets are demanding proof"
 - "this suggests" over "what it may imply is"
+
+### Writing examples
+
+Bad:
+- The equity market may punish AI credibility gaps faster than it rewards generic exposure.
+
+Better:
+- Investors seem quicker to punish weak AI stories than to reward vague AI positioning.
+
+Bad:
+- The application moat is moving away from raw model quality and toward workflow control, proprietary context, and permission to act.
+
+Better:
+- Better models alone are not enough. The stronger products are the ones that already own the workflow, hold useful context, and can actually do things inside it.
+
 
 ## Daily notes
 
@@ -295,31 +291,18 @@ Strategic / market implications:
 Do not split company-level and industry-level implications into separate sections.
 Use one section and write the clearest level of analysis for the point.
 
-When a development seems important but the readthrough is still unclear:
-- include it as a `Watch` bullet
-- state the concrete development
-- briefly note why it may matter
-- avoid forcing a stronger interpretation than the evidence supports
+### Hard caps
 
-### Transcript datapoint writeback rule
+These are ceilings, not targets. Empty sections are allowed.
 
-Curated transcripts are not part of the default daily-notes pass.
+Per daily entry:
+- Capability / technology shifts: max 4
+- Strategic / market implications: max 5
 
-However, the synthesis step may write back a small number of concrete datapoints from curated transcripts into the current monthly daily note file when all of the following are true:
-- the datapoint is factual, not just interpretive
-- it is material enough to matter later
-- it is not already captured in the daily notes
-- provenance remains visible
-
-When writing back a datapoint from a transcript:
-- place it in the most relevant existing daily-notes section
-- begin with `Curated-source datapoint:`
-- state the source briefly
-- do not rewrite the whole daily note
-- do not write back pure opinion or speculative interpretation
-
-Example:
-- Curated-source datapoint: In a 2026-03-27 All-In transcript, panelists claimed Anthropic added roughly $6B of annual run-rate revenue in February alone. If true, that would materially strengthen the enterprise-coding adoption thesis. [Watch]
+Ideas:
+- Investment ideas: max 3
+- Startup ideas: max 3
+- Product ideas: max 3
 
 ## Better idea generation
 
@@ -357,14 +340,58 @@ Investment watchlist ideas may include:
 
 When in doubt, prefer ideas built around bottlenecks, workflow failure modes, changes in buyer behavior, or mispriced transition dynamics rather than novelty for its own sake.
 
-## House-view synthesis
+### Transcript datapoint writeback rule
 
-The synthesis document is not just a maintenance layer for existing views.
-It should also help discover important hypotheses that the current synthesis may be missing.
+Curated transcripts are not part of the default daily-notes pass.
+
+However, the synthesis step may write back a small number of concrete datapoints from curated transcripts into the current monthly daily note file when all of the following are true:
+- the datapoint is factual, not just interpretive
+- it is material enough to matter later
+- it is not already captured in the daily notes
+- provenance remains visible
+
+When writing back a datapoint from a transcript:
+- place it in the most relevant existing daily-notes section
+- begin with `Curated-source datapoint:`
+- state the source briefly
+- do not rewrite the whole daily note
+- do not write back pure opinion or speculative interpretation
+
+Example:
+- Curated-source datapoint: In a 2026-03-27 All-In transcript, panelists claimed Anthropic added roughly $6B of annual run-rate revenue in February alone. If true, that would materially strengthen the enterprise-coding adoption thesis. [Watch]
+
+
+## House-view synthesis
 
 The synthesis should maintain:
 - a small set of active house views
 - a small set of candidate hypotheses not yet promoted
+
+The synthesis should not mirror the daily notes. Additionally, it should be more explicit, more hypothesis-driven, and more useful for edge.
+
+Each active hypothesis should include:
+- hypothesis
+- status
+- why we believe this
+- current evidence
+- evidence against
+- implications
+  - investments
+    - longs
+    - shorts
+  - business / product strategy
+  - startup ideas
+
+It should also help discover important hypotheses that the current synthesis may be missing. 
+
+Each candidate hypothesis should include:
+- hypothesis
+- why it might matter
+- current evidence
+- what is still missing
+- why it is not promoted yet
+
+Update the synthesis only when there is durable evidence, repeated support, or a clearly important development.
 
 Daily notes should be treated as evidence that:
 - reinforces an active hypothesis
@@ -385,44 +412,6 @@ A good synthesis review should ask:
 - Are any current hypotheses too broad, too narrow, overlapping, or stale?
 - Are we missing a second-order effect that matters more than the obvious first-order story?
 
-Do not force all meaningful developments into the existing hypothesis set.
-Preserve repeated or important signals even when they do not fit the current map.
-
-## Synthesis
-
-Do not mirror the daily notes. Update the synthesis only when there is durable evidence, repeated support, or a clearly important development.
-
-The synthesis should follow the same tone rules as the daily notes:
-- plain English
-- direct
-- concise
-- specific
-- no jargon for its own sake
-
-But unlike the daily notes, the synthesis should be more explicit, more hypothesis-driven, and more useful for edge.
-
-The synthesis should maintain a small number of sharp, testable house views.
-
-Each active hypothesis should include:
-- hypothesis
-- status
-- why we believe this
-- current evidence
-- evidence against
-- implications
-  - investments
-    - longs
-    - shorts
-  - business / product strategy
-  - startup ideas
-
-Each candidate hypothesis should include:
-- hypothesis
-- why it might matter
-- current evidence
-- what is still missing
-- why it is not promoted yet
-
 ### Synthesis writing guidance
 
 - Keep the synthesis evidence-centric.
@@ -441,7 +430,6 @@ Each candidate hypothesis should include:
 - Use these sources to sharpen the logic, not to replace observed evidence.
 - Do not let a strong opinion source create a specific long, short, or startup idea without enough grounding in the observed evidence.
 
-
 ### Evidence discipline
 
 - Current evidence should include actual observed facts, patterns, or developments that support the view.
@@ -454,29 +442,33 @@ Each candidate hypothesis should include:
 - Do not create fake certainty out of sparse evidence.
 - If evidence is mixed, say so plainly.
 
-## Lookback windows for synthesis
+### Evidence windows
 
-Use different evidence windows for different synthesis tasks.
-
-### Default windows
-
-- **New hypothesis promotion:** prioritize the last **6–12 weeks** of daily notes
-- **Updating existing hypotheses:** prioritize the last **6–12 weeks** of daily notes
-- **Long-term memory:** use the full `notes/synthesized_implications.md` document as the durable record of prior views
-
-### How to apply these windows
-
-- When deciding whether to create or promote a **new hypothesis**, focus mainly on whether a theme appears repeatedly and meaningfully within the last **6–12 weeks**
-- When deciding whether to **strengthen or challenge** an existing hypothesis, consider the last **6–12 weeks** of daily notes, along with the current synthesis entry
+- For both **new hypothesis promotion** and **updating existing hypotheses**, prioritize the last **6–12 weeks** of daily notes
+- Use the full `notes/synthesized_implications.md` document as the durable record of prior views
 - A single development may justify immediate promotion if it is clearly a step-change event with durable strategic significance
 - A curated transcript may justify a new candidate hypothesis faster than it can justify a promoted active hypothesis
 
 ### Promotion rule
 
 A new theme should usually be promoted into an active hypothesis only when:
-- it appears meaningfully on at least **3 separate days within roughly 3–6 weeks**
+- it appears on at least **3 separate days within roughly 3–6 weeks**, each time grounded in a concrete development or observed fact (not just interpretation or reiteration of the same single event)
 - or a single development is clearly a **step-change event** with durable strategic significance
 - or a curated source contains unusually strong first-hand evidence that materially changes the map
+
+### Retirement and archiving rule
+
+An active hypothesis should be demoted to candidate or retired when:
+- it has received no reinforcing evidence in the last 6–8 weeks, and
+- it has received repeated challenging signals in that same period, and
+- there is no reason to expect a near-term development that would resolve the challenge
+
+When retiring a hypothesis:
+- move it from active to candidate, or remove it entirely if it adds no residual value
+- do not leave stale active hypotheses in place just because removing them feels like a loss
+- if the view is borderline, demote to candidate rather than retire outright
+
+A hypothesis that is simply not being updated is not the same as one that has been tested and held. Both staleness and repeated challenge are grounds for demotion.
 
 ### Search discipline
 
@@ -494,30 +486,9 @@ Unless there is a reason to go further back, a synthesis run should usually revi
 - the full `notes/synthesized_implications.md` document
 - every file in `transcripts/new/`
 
-## Hard caps
-
-These are ceilings, not targets. Empty sections are allowed.
-
-Per daily entry:
-- Capability / technology shifts: max 4
-- Strategic / market implications: max 5
-
-Ideas:
-- Investment ideas: max 3
-- Startup ideas: max 3
-- Product ideas: max 3
-
-
 ## Change management
 
-At the end of each run, provide a short changelog stating:
-- what was added
-- whether the synthesis changed
-- what was strengthened, challenged, promoted, merged, split, or left unchanged
-- any candidate hypotheses added or reviewed
-- which curated transcripts were processed
-- whether any curated-source datapoints were written back into daily notes
-- any notable uncertainty
+Each skill defines its own changelog format. Follow the changelog requirements in the relevant skill file at the end of each run.
 
 ## Monthly file rollover for daily notes
 
@@ -531,30 +502,3 @@ When updating daily notes:
 - then append the new dated entry under that file
 
 Never append a new month's dated entries to the prior month's file.
-
-## Writing examples
-
-Bad:
-- The equity market may punish AI credibility gaps faster than it rewards generic exposure.
-
-Better:
-- Investors seem quicker to punish weak AI stories than to reward vague AI positioning.
-
-Bad:
-- The application moat is moving away from raw model quality and toward workflow control, proprietary context, and permission to act.
-
-Better:
-- Better models alone are not enough. The stronger products are the ones that already own the workflow, hold useful context, and can actually do things inside it.
-
-Bad:
-- Premium closed-model vendors may gain pricing and partnership leverage faster than expected.
-
-Better:
-- If more labs stumble, the top closed-model vendors could get more pricing power and better partnership terms.
-
-Bad:
-- Prioritize task-native outputs such as visuals, guided flows, and action-ready summaries.
-
-Better:
-- Build features that return something usable, like a chart, a step-by-step flow, or a draft the user can act on.
-

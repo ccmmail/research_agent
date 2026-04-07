@@ -3,9 +3,9 @@ name: synthesis-review
 description: Review and conservatively update notes/synthesized_implications.md after the daily notes have been updated. Use this when the task is to maintain sharp house views, test them against recent evidence, process curated transcripts, surface missing hypotheses, and optionally write back concrete transcript datapoints into daily notes.
 ---
 
-Read:
+Read (in this order):
 - AGENTS.md
-- SOURCES.md
+- SOURCES.md — read before processing any transcript, to confirm source type, quality, and intended use for each
 - notes/synthesized_implications.md
 - the current monthly file in `notes/`
 - recent adjacent daily notes files as needed for evidence
@@ -37,15 +37,13 @@ Follow SOURCES.md for:
 Run-specific reminders:
 - No change is a normal outcome.
 - Most runs should result in no edit or only a small targeted edit.
+- Processing a transcript and concluding no synthesis change is warranted is a complete and valid run. These are independent outcomes: transcripts must be processed; synthesis must only change when evidence justifies it.
 - Do not mirror the daily notes.
 - Maintain a small number of sharp house views, not a broad catalog.
 - Also look for important hypotheses the current synthesis may be missing.
 - Do not force new evidence into an existing hypothesis if it fits poorly.
 - Avoid worldview lock-in. Use transcripts not just to confirm existing hypotheses, but to detect ideas the current map may miss.
 - Discovery should come before targeted confirmation.
-- Weight sources using `SOURCES.md` and AGENTS.md source-weighting rules.
-- Reported news and primary sources should do most of the work in `current evidence` and `evidence against`.
-- Curated interpretive sources should do most of the work in `why we believe this`, candidate hypotheses, and sharpening implications.
 - Do not promote an active hypothesis mainly because several opinion sources agree with each other.
 - Distinguish inside transcripts between:
   - factual datapoints
@@ -60,6 +58,7 @@ Run-specific reminders:
   - a candidate hypothesis should be added
   - two hypotheses should be merged
   - one hypothesis should be split into two sharper ones
+  - an active hypothesis should be demoted to candidate or retired (see AGENTS.md retirement and archiving rule)
 - `[New]` daily-note signals may justify a synthesis update, but not automatically; check whether they are strong enough and durable enough.
 - `[Reinforcing]` signals usually strengthen an existing hypothesis rather than create a new one.
 - `[Challenging]` signals should update confidence, evidence against, or the hypothesis itself when warranted.
@@ -101,12 +100,12 @@ Transcript-processing review:
     - likely shorts
     - business / product strategy moves
     - startup ideas
-  - a transcript is fully processed only when:
-    - the strongest implications or hypothesis seeds have been extracted
-    - any material datapoints have been extracted
-    - the synthesis has been updated if warranted
-    - any justified daily-note writeback datapoints have been added
-  - if fully processed, move it to `transcripts/archived/`
+  - before moving a transcript to `transcripts/archived/`, confirm all of the following:
+    - [ ] the strongest implications or hypothesis seeds have been extracted
+    - [ ] any material datapoints have been extracted
+    - [ ] the synthesis has been updated if warranted, or explicitly concluded no update is needed
+    - [ ] any justified daily-note writeback datapoints have been added, or explicitly concluded none qualify
+  - only after all four conditions are confirmed, move the transcript to `transcripts/archived/`
 
 Missing-hypothesis review:
 - After reviewing the evidence, explicitly ask:

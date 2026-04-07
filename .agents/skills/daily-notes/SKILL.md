@@ -5,6 +5,7 @@ description: Update the current monthly daily notes file from Reported News and 
 
 Read:
 - AGENTS.md
+- SOURCES.md
 - notes/synthesized_implications.md, if it exists
 - the current monthly file in `notes/`
 - recent adjacent daily notes files if useful
@@ -13,6 +14,7 @@ Then review the **Reported News** and any closely linked primary-source items ne
 
 Task:
 - append one new dated entry to the current monthly file in `notes/`
+- if today's date already has an entry in the file, append a second dated block rather than modifying the existing one — do not silently overwrite
 - do not rewrite prior entries except to fix an obvious formatting issue
 - do not update notes/synthesized_implications.md
 - do not process curated transcripts in transcripts/new/
@@ -34,7 +36,7 @@ Run-specific reminders:
 - Do not create a separate "Major developments" section.
 - Put the signal label at the end of the bullet.
 - Empty sections are allowed.
-- If the synthesis file is thin, rely more on recent daily notes and use `[Watch]` more often.
+- If the synthesis file is thin or absent, rely more on recent daily notes and use `[Watch]` more often. If there are no active hypotheses, `[Reinforcing]` and `[Challenging]` apply only relative to candidate hypotheses or clear patterns in recent daily notes — default to `[New]` or `[Watch]` when the hypothesis set is not established enough to test against.
 - Do not force every important development into an existing house view.
 - Preserve signals that may point to a missing hypothesis, especially if they are repeated, surprising, or not well explained by the current synthesis.
 - Prefer bullets that help test or update an active or candidate hypothesis.
