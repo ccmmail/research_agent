@@ -13,7 +13,7 @@ Read:
 Then review the **Reported News** and any closely linked primary-source items needed to interpret the day’s developments.
 
 Task:
-- append one new dated entry to the current monthly file in `notes/`
+- append one new dated entry to the current monthly file in `notes/`, in reverse chronological order (newest at top)
 - if today's date already has an entry in the file, append a second dated block rather than modifying the existing one — do not silently overwrite
 - do not rewrite prior entries except to fix an obvious formatting issue
 - do not update notes/synthesized_implications.md
